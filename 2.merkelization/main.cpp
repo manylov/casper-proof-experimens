@@ -138,7 +138,7 @@ block_type compute_validators_ssz_merkleization(
 {
   std::array<block_type, VALIDATORS_COUNT> validator_leaves;
 
-  for (size_t validator_idx; validator_idx < VALIDATORS_COUNT; ++validator_idx)
+  for (size_t validator_idx = 0; validator_idx < VALIDATORS_COUNT; ++validator_idx)
   {
     validator_leaves[validator_idx] = hash_tree<8>({validators_pubkeys[validator_idx],
                                                     validators_withdrawal_credentials[validator_idx],
