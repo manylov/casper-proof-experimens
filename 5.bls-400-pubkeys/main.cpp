@@ -38,7 +38,6 @@ constexpr const std::size_t validators_amount = 500;
   {
     are_equal = are_equal && (pairing1[i] == pairing2[i]);
   }
-  // __builtin_assigner_exit_check(are_equal);
 
   return are_equal;
 }
